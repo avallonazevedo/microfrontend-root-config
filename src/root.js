@@ -12,10 +12,4 @@ registerApplication({
     activeWhen: (location => location.pathname.startsWith('/backoffice')),
 });
 
-registerApplication({
-    name: 'compliance',
-    app: () => System.import('compliance'),
-    activeWhen: (location => location.pathname.startsWith('/compliance')),
-});
-
 start();
