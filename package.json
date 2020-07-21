@@ -1,7 +1,8 @@
 {
   "scripts": {
     "dev": "webpack-dev-server --mode=development --port 9000 --env.isLocal=true",
-    "start": "webpack -p --progress && node server.js",
+    "heroku-postbuild": "webpack -p",
+    "start": "node server.js",
     "lint": "eslint src --ext js,ts,tsx",
     "test": "cross-env BABEL_ENV=test jest --passWithNoTests",
     "format": "prettier --write './**'",
