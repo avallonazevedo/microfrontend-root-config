@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "start": "webpack-dev-server --mode=development --port 9000 --env.isLocal=true",
+    "dev": "webpack-dev-server --mode=development --port 9000 --env.isLocal=true",
+    "start": "webpack -p --progress && yarn serve",
     "lint": "eslint src --ext js,ts,tsx",
     "test": "cross-env BABEL_ENV=test jest --passWithNoTests",
     "format": "prettier --write './**'",
